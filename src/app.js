@@ -180,7 +180,6 @@ class Superwar {
     totalStrength = (type) => {
         // Calculate and return the total strength of the team
         // Type your code here
-
         return this.players
         .filter((player) => player.type == type)
         .reduce((total, player) => total + player.strength, 0);
@@ -197,8 +196,6 @@ class Superwar {
         location.reload();
     }
 }
-
-
 window.onload = () => {
     const superwar = new Superwar(PLAYERS);
     superwar.viewPlayers();
